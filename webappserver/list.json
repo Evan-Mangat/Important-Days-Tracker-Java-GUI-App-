@@ -1,0 +1,25 @@
+[ {
+  "name" : "Alice and Bob's Wedding Anniversary",
+  "date" : [ 2024, 5, 20 ],
+  "description" : "Alice and Bob got hitched!!",
+  "type" : "anniversary",
+  "location" : "Vancouver, BC"
+}, {
+  "name" : "Taylor's Birthday",
+  "date" : [ 1989, 12, 13 ],
+  "description" : "Happy Birthday Tay Tay!",
+  "type" : "birthday",
+  "personName" : "Taylor Swift"
+}, {
+  "name" : "Year of the Dragon",
+  "date" : [ 1904, 1, 1 ],
+  "description" : "Entering the year of the dragon, symbol of power and nobility in Chinese culture.",
+  "type" : "occasion",
+  "frequency" : 12
+}, {
+  "name" : "Year of the Snake",
+  "date" : [ 1905, 1, 1 ],
+  "description" : "Entering the year of the snake, symbol of intelligence and resilience in Chinese culture.",
+  "type" : "occasion",
+  "frequency" : 12
+} ]

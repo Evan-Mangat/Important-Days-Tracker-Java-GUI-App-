@@ -1,0 +1,66 @@
+# -------------------------------------
+# CURL COMMANDS FOR IMPORTANT DAYS SERVER
+# Base URL: http://localhost:8080
+# -------------------------------------
+
+# 1. Ping the server to ensure it's running
+curl http://localhost:8080/ping
+
+# 2. List all important days (sorted)
+curl http://localhost:8080/listAll
+
+# 3. List only passed days this year
+curl http://localhost:8080/listPassedDaysThisYear
+
+# 4. List only upcoming days this year
+curl http://localhost:8080/listUpcomingDaysThisYear
+
+# 5. List all days in the current year (passed + upcoming)
+curl http://localhost:8080/listDaysThisYear
+
+# 6. Add a new important day (example: Birthday)
+curl -X POST http://localhost:8080/addDay \
+  -H "Content-Type: application/json" \
+  -d '{
+        "type": "birthday",
+        "name": "Alice's Birthday",
+        "date": "2025-06-15",
+        "description": "Celebrating Alice turning 30!",
+        "personName": "Alice"
+      }'
+
+# 7. Add a new important day (example: Anniversary)
+curl -X POST http://localhost:8080/addDay \
+  -H "Content-Type: application/json" \
+  -d '{
+        "type": "anniversary",
+        "name": "Wedding Anniversary",
+        "date": "2024-09-12",
+        "description": "10th anniversary",
+        "location": "Paris"
+      }'
+
+# 8. Add a new important day (example: Occasion)
+curl -X POST http://localhost:8080/addDay \
+  -H "Content-Type: application/json" \
+  -d '{
+        "type": "occasion",
+        "name": "Team Meetup",
+        "date": "2025-03-01",
+        "description": "Annual team event",
+        "frequency": 1
+      }'
+
+# 9. Remove an important day (must match all fields exactly)
+curl -X POST http://localhost:8080/removeDay \
+  -H "Content-Type: application/json" \
+  -d '{
+        "type": "birthday",
+        "name": "Alice's Birthday",
+        "date": "2025-06-15",
+        "description": "Celebrating Alice turning 30!",
+        "personName": "Alice"
+      }'
+
+# 10. Save and shut down the server (persists list to JSON)
+curl http://localhost:8080/exit

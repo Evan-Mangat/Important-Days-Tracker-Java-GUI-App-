@@ -1,0 +1,56 @@
+Important Days Tracker - User Manual
+
+This application allows you to manage a list of important days, such as anniversaries, birthdays, and occasions. You can add, remove, and filter important days using the graphical user interface (GUI).
+
+---
+
+1. Add an Important Day
+   - Click the "Add Important Day" button.
+   - A dialog will appear with fields to enter the details of the important day:
+     - Type: Select the type of important day (Anniversary, Birthday, Occasion).
+     - Name: Enter the name of the important day (e.g., "Alice and Bob's Wedding Anniversary").
+     - Date: Select the date using the date picker.
+     - Description: Enter a description (optional).
+     - Additional Information:
+       - For Anniversaries: Enter the location (e.g., "Vancouver, BC").
+       - For Birthdays: Enter the person's name (e.g., "Taylor Swift").
+       - For Occasions: Enter the frequency in years (e.g., "12" for every 12 years).
+   - Click "Add" to save the important day or "Cancel" to discard it.
+
+2. Remove an Important Day
+   - Operation only available in Show All view, not when filtering
+   - Select the important day you want to remove by checking the checkbox next to it.
+   - Click the "Remove Selected" button.
+   - The selected important day will be removed from the list.
+
+3. Show All Important Days
+   - Click the "Show All" button.
+   - The list will display all important days, sorted by date.
+
+4. Show Passed Important Days This Year
+   - Click the "Show Passed This Year" button.
+   - The list will display important days that have already occurred this year, sorted by date.
+
+5. Show Upcoming Important Days This Year
+   - Click the "Show Upcoming This Year" button.
+   - The list will display important days that are yet to occur this year, sorted by date.
+
+6. Show Important Days by Type
+   - Select the type of important day from the dropdown menu (Anniversary, Birthday, Occasion).
+   - Click the "Show By Type" button.
+   - The list will display important days of the selected type that occur this year, sorted by date.
+
+7. Exit the Application
+   - Close the application window.
+   - The list of important days will be automatically saved to a JSON file (list.json).
+
+---
+
+Notes:
+- The description field is optional. All other fields are required.
+- The list is automatically saved when you exit the application and loaded when you start it again.
+- If no items match a filter (e.g., no passed important days this year), the list will display "No items to show."
+
+---
+
+Thank you for using the Important Days Tracker!
